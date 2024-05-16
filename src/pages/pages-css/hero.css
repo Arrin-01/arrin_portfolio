@@ -1,0 +1,182 @@
+#hero{
+    padding-top: 200px;
+    width: 90vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.hero-content h4{
+    font-size: 1.7rem;
+    margin: 0px;
+    color: var(--title-color1);
+    text-align: left;
+}
+
+.hero-content h4 strong{
+    color: var(--h1-shadow);
+}
+.hero-content h1{
+    font-family: Arial;
+    text-align: left;
+    font-weight: 900;
+    font-size: 3.5rem;
+    margin: 0px;
+}
+
+.hero-title{
+    cursor: grab;
+    color: var(--title-color1);
+    text-shadow:
+        -2px 0 var(--title-color2),
+        0 2px var(--title-color2),
+        2px 0 var(--title-color2),
+        0 -2px var(--title-color2);
+    transition: color 0.2s, text-shadow, 0.2s;
+}
+
+.hero-title:hover{
+    color: var(--title-hover1);
+    text-shadow:
+        -2px 0 var(--title-hover2),
+        0 2px var(--title-hover2),
+        2px 0 var(--title-hover2),
+        0 -2px var(--title-hover2);
+}
+
+.earth{
+    display:inline-block;
+    border: 3px solid var(--title-color2);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.hero-content h3{
+    font-size: 1.2rem;
+    min-width: 350px;
+    max-width: 600px;
+    text-align: left;
+    
+}
+
+.hand{
+    display: inline-block;
+    font-size: 3.5rem;
+    transform-origin: 50% 120%;
+    cursor: grab;
+    animation: wave-left 0.5s ease-in-out infinite,
+               wave-right 0.5s ease-in-out infinite alternate;
+}
+
+.hero-name{
+    font-size: 3rem;
+    cursor: pointer;
+    color: var(--name-color);
+    text-shadow: -2px 0 var(--border-color), 0 2px var(--border-color), 2px 0 var(--border-color), 0 -2px var(--border-color);
+}
+
+.hero-name:hover{
+    color: var(--border-color);
+    text-shadow: -2px 0 var(--border-hover), 0 2px var(--border-hover), 2px 0 var(--border-hover), 0 -2px var(--border-hover);
+    text-decoration: underline;
+}
+
+
+.hero-box{
+    border: none;
+    width: 500px;
+    text-align: center;
+}
+
+.hero-box img{
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+    border-radius: 150px;
+    animation: prof-anime 8s ease-in-out infinite 1s;
+    box-shadow: var(--light-sizeX) var(--light-sizeX) var(--blur-size) var(--profile-border),
+                var(--light-sizeY) var(--light-sizeY) var(--blur-size) var(--profile-border),
+                var(--light-sizeY) var(--light-sizeX) var(--blur-size) var(--profile-border),
+                var(--light-sizeX) var(--light-sizeY) var(--blur-size) var(--profile-border);
+    border: none;
+}
+
+@keyframes wave-left {
+    from{
+        transform: rotate(16deg);
+    }
+    to {
+        transform: rotate(-16deg);
+    }
+}
+
+@keyframes wave-right {
+    from{
+        transform: rotate(-16deg);
+    }
+    to {
+        transform: rotate(16deg);
+    }
+}
+
+@keyframes prof-anime {
+    0% { border-radius: 50% 40% 35% 75%/ 50% 40% 65% 35% }
+    25% { border-radius: 45% 35% 70% 30%/ 55% 65% 35% 40% }
+    50% { border-radius: 35% 60% 75% 40%/ 50% 55% 30% 60% }
+    75% { border-radius: 50% 75% 45% 60%/ 60% 70% 40% 65% }
+    100% { border-radius: 50% 40% 35% 75%/ 50% 40% 65% 35% }
+}
+
+
+@media screen and (max-width: 850px){
+    #hero{
+        padding-top: 80px;
+    }
+    .hero-content{
+        order: 2;
+        text-align: center;
+    }
+    .hero-name{
+        font-size: 2rem;
+    }
+    .hero-box{
+        order: 1;
+        margin-bottom: 10px;
+    }
+    .hero-box img{
+        max-width: 250px;
+        height: auto;
+    }
+    .hero-content h4{
+        font-size: 1.1rem;
+        margin: 0px;
+        text-align: center;
+    }
+    .hero-content h1{
+        font-size: 2.3rem;
+        margin: 0px;
+        text-align: center;
+    }
+    .hero-content h3{
+        font-size: 0.9rem;
+        text-align: center;
+    }
+    .hand{
+        font-size: 2.2rem;
+    }
+    .earth{
+        border: 2px solid var(--h1-shadow);
+        border-radius: 50%;
+        width: 28px;
+        height: 28px;
+    }
+    
+}
+

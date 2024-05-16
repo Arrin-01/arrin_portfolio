@@ -1,0 +1,29 @@
+#reference{
+    padding: 90px 70px;
+}
+
+.reference-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 2.2rem;
+}
+
+.reference-box{
+    padding: 35px 15px;
+    text-align: center;
+    max-width: 300px;
+}
+
+.reference-box img{
+    max-width: 150px;
+    border-radius: 50%;
+}
+
+.reference-box h4{
+    font-size: 0.9rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: var(--p-color2);
+    text-shadow: var(--txt-shadow);
+}

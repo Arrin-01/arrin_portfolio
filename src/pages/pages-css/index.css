@@ -1,0 +1,160 @@
+body{
+    display: flex;
+    justify-content: center;
+    font-family: "Tahoma", sans-serif;
+    padding: 0px;
+    margin: 0;
+
+    -webkit-font-smoothing: "Tahoma", sans-serif;
+    -moz-osx-font-smoothing: "Tahoma", sans-serif;
+    font-style: normal;
+}
+
+/*======DO NOT REMOVE THIS!!!======*/
+.elements{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 90vw;
+    align-content: center;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+/*======DEFAULT VALUES======*/
+:root{
+    --head-color1: hsla(200, 100%, 90%, 0.7);
+    --head-color2: hsla(200, 72%, 43%, 0.3);
+
+    --nav-color: hsl(261, 100%, 26%);
+    --nav-border: hsl(180, 70%, 90%);
+    --nav-hever: hsl(200, 91%, 10%);
+
+    --name-color: hsl(200, 91%, 10%);
+    --border-color: hsl(180, 70%, 90%);
+    --border-hover: hsl(261, 100%, 26%);
+
+    --profile-border: hsl(200, 100%, 90%);
+    --profile-shadow: hsla(200, 72%, 43%, 0.5);
+
+    --title-color1: hsl(200, 80%, 80%);
+    --title-color2: hsla(200, 72%, 43%, 0.8);
+
+    --title-hover1: hsl(50, 70%, 50%);
+    --title-hover2: hsl(0, 0%, 0%);
+
+
+    --h2-color: hsl(200, 90%, 20%);
+    --h2-border: hsl(200, 100%, 90%);
+
+    --h3-color: hsl(200, 90%, 90%);
+
+    --h4-color: hsl(200, 80%, 80%);
+
+    --p-color: hsl(200, 90%, 90%);
+    --p-color2: hsl(180, 100%, 40%);
+    --p-box: hsla(225, 100%, 96%, 0.2);
+    --p-box-shadow: 2px 2px 4px hsl(180, 70%, 90%);
+    --p-border: hsl(260, 90%, 15%);
+
+    --txt-shadow:
+        1px 0 2px var(--p-border),
+        -1px 0 2px var(--p-border),
+        0 1px 2px var(--p-border),
+        0 -1px 2px var(--p-border);
+
+    --btn-color1:hsl(200, 90%, 90%);
+    --btn-color2: hsla(200, 72%, 43%, 0.5);
+    --btn-color3: hsla(200, 90%, 20%, 0.3);
+
+    --light-sizeX: 4px;
+    --light-sizeY: -4px;
+    --blur-size: 8px;
+
+    --icon-shadow:
+        1px 0 3px var(--border-color),
+        -1px 0 3px var(--border-color),
+        0 1px 3px var(--border-color),
+        0 -1px 3px var(--border-color);
+
+    --rotateA: "";
+    --rotateB: "";
+    --showhide: 0;
+    --ofacity: "";
+    --width: "";
+}
+
+/*======SET DEFAULT======*/
+h2{
+    color: var(--h2-color);
+    font-size: 2rem;
+    text-align: center;
+    text-shadow:
+    1px 0 1px var(--h2-border),
+    -1px 0 1px var(--h2-border),
+    0 1px 1px var(--h2-border),
+    0 -1px 1px var(--h2-border);
+}
+
+h3{
+    color: var(--h3-color);
+}
+h4{
+    color: var(--h4-color);
+}
+
+p{
+    color: var(--p-color);
+}
+
+.p-box{
+    padding: 5px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--p-box);
+    box-shadow: var(--p-box-shadow);
+}
+
+.portfolio-button{
+    display: inline-block;
+    padding: 14px 32px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    max-width: 250px;
+
+    color: var(--btn-color1);
+    border: 1px solid var(--btn-color1);
+    background-color: var(--btn-color2);
+    transition: background-color o.5s;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    -webkit-transition: background-color 5px;
+    -moz-transition: background-color 5px;
+    -ms-transition: background-color 5px;
+    -o-transition: background-color 5px;
+}
+
+.portfolio-button:hover{
+    color: var(--btn-color1);
+    border: 1px solid var(--btn-color1);
+    background-color: var(--btn-color3);
+}
+
+/*====== MAIN NAVS ======*/
+/*==THIS SHOULD ALWAYS BE DISPLAY: NONE==*/
+.main-navs-link{
+    display: none;
+    margin: 0px;
+}
+/*========================*/
+
+

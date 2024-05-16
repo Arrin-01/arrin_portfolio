@@ -1,0 +1,36 @@
+#skills{
+    padding-top: 80px;
+}
+
+.skill-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 2.2rem;
+}
+
+.skill-content{
+    text-align: center;
+    min-width: 140px;
+    max-width: 230px;
+    margin-bottom: 20px;
+    vertical-align: center;
+}
+
+.skill-content h4{
+    padding-top: 20px;
+    color: var(--p-color2);
+    text-shadow: var(--txt-shadow);
+}
+
+
+.skill-content img{
+    border: 2px solid rgb(175, 181, 240);
+    margin-bottom: 0px;
+    width: 210px;
+    height: auto;
+}
+.skill-content p{
+    margin-right: 5px;
+    margin-left: 5px;
+}
